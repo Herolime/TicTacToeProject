@@ -2,16 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import calculateWinner from './calculateWinner'
-
-function Square(props) {
-  return (
-    <button className="square" 
-    onClick={() => props.onClick()}>
-      {props.value}
-    </button>
-  );
-}
+import Square from './Square';
+import calculateWinner from './calculateWinner';
 
 class Board extends React.Component {
   constructor(props) {
